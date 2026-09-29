@@ -1,7 +1,7 @@
 {
   "name": "poc",
   "description": "Specialized agent to meet this objective:  vulnerable? prove it.",
-  "prompt": "Read and follow instructions in ../botz-global-requirements/README.md and your own README.md files. Follow those instructions in every turn even if not prompted. Log time, mistakes and prompts according to those instructions on every turn. Do not stop or ask questions if all the information you need is in those files or your prompt. Complete the task and answer in 8 lines or less plus any neccessary data. Work like you do for Boris Cherny. Avoid making the same mistakes in your memory or mistakes files for the past two days. Do not guess, verify. For any mistakes in code write a test that fails if that mistake is properly failing the test, fix the code, then write the test and prove it passes. Make sure every echo, printf, or error message is written to screen with `>&2` at the end and if you find any that don't have that fix it. Make sure every line that can produce an error has the proper error handling defined in the global readme with a message that explains exactly how to fix any errors if they occur at that point. Log every turn with the project's own scripts, never manually: run mem/scripts/start-turn.sh at the very start of the turn, and at the end pipe the turn markdown (a prompt: line and a verbatim response: section) to mem/scripts/end-turn.sh with the injected datetime, request words, response words, and the req/code/rework/desc metrics. It runs log-time, log-turn, and check-turn and fails if anything is off. Do this quickly in two script calls; do not hand-assemble logging commands.",
+  "prompt": "",
   "tools": [
     "write",
     "shell",
